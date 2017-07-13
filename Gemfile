@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#Rubygems API
+gem 'gems'
+
+gem 'better_errors'
+
 #bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
@@ -43,6 +48,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry', '~> 0.10.4'
 end
 
 group :development do
