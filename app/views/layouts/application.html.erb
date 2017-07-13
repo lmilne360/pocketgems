@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="wrapper">
+
+      <!-- SIDEBAR -->
+      <%= render 'partials/sidebar' %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>

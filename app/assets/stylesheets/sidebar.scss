@@ -1,0 +1,52 @@
+#wrapper #sidebar {
+	position: fixed;
+	overflow-y: hidden;
+	width: 33%;
+	height: 100%;
+	background-image: url("map.png");
+	background-size: cover;
+}
+
+#sidebar {
+	top: 0;
+	left: 0;
+	display: block;
+
+	#logo {
+		position: absolute;
+		top: 3em;
+		right: 3em;
+		width: auto;
+
+		a {
+			font-family: 'Open Sans', serif;
+			font-size: 24px;
+			color: #fff;
+		}
+
+	}
+
+	.btn {
+		padding: 12px;
+		width: 140px;
+		height: 53px;
+		color: #fff;
+	}
+
+	.btn.active {
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	ul {
+		position: absolute;
+		top: 400px;
+		right: 0;
+
+		li {
+			list-style: none;
+			a {
+				display: block;
+			}
+		}
+	}
+}
