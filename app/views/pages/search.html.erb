@@ -1,2 +1,28 @@
-<h1>Pages#search</h1>
-<p>Find me in app/views/pages/search.html.erb</p>
+<div id="search-page">
+  <h1>Search Gems</h1>
+
+  <!-- Search Form -->
+
+  <%= form_tag "/search" do %>
+  <div class="input-group col-sm-6">
+    <input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term" required>
+  </div>
+  <% end %>
+
+  <!-- Not FOund -->
+  <% if @error %>
+  <div class="error">
+    <%= @error %>
+  </div>
+  <% end %>
+
+  <!-- Search Results -->
+
+  <div class="col-md-8 gem-data">
+    <% if @gem %>
+    <ul>
+      <%= render 'partials/searchresult', g: @gem %>
+    </ul>
+    <% end %>
+  </div>
+</div>

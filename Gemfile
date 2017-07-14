@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 #Rubygems API
 gem 'gems'
 
+#easier debugging
 gem 'better_errors'
 
 #bootstrap

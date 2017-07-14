@@ -12,13 +12,22 @@
     <div id="wrapper">
 
       <!-- SIDEBAR -->
+
       <%= render 'partials/sidebar' %>
 
-      <!-- PAGES -->
-    <div id="page-wrapper">
-      <%= yield %>
-    </div>
+      <!-- PAGE CONTENT -->
+      
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
+    <!-- wrapper -->
   </body>
 </html>

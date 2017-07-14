@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root to: "pages#search"
-  
-  get '/search' => "pages#search"
 
-  get '/favorite' => 'pages#favorite'
+  get '/' => "pages#search"
 
-  post '/search_gems' => 'pages#search_gems'
+  get '/favorites' => 'pages#favorite'
+
+  post '/search' => 'pages#search_gems'
 
   get '*path' => "pages#search"
 
