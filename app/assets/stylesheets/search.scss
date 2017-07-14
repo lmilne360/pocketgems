@@ -10,11 +10,13 @@
     font-weight: bold;
   }
 
+  // FORM STYLES
+
   form .input-group {
     position: absolute;
     top: 25em;
     left: 75px;
-    
+
     .form-control {
       background: url("search.png") no-repeat 95% 50%;
       padding-left: 33px;
@@ -29,6 +31,50 @@
       }
     }
   }
-  // form input-group
+
+
+// ERROR STYLE
+.error {
+  position: relative;
+  top: 30em;
+  left: 12em;
+  color: #f55;
+  font-size: 16px;
+}
+
+// SEARCH RESULTS STYLE
+.results {
+  position: absolute;
+  top: 34em;
+  left: 4em;
+  ul {
+    padding-left: 62px;
+    li {
+      margin-bottom: 5px;
+      list-style: none;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .fave-icon {
+    display: inline;
+    cursor: pointer;
+    color: gainsboro;
+    &:hover, &.fave {
+      color: royalblue;
+    }
+  }
+
+  .gem-info, .gem-dependencies {
+    color: darkgrey;
+    p{
+      color: #333333;
+    }
+  }
+}
+
+
 }
 // Wrapper
