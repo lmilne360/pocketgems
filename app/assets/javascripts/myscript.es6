@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+
 $(document).on('turbolinks:load', function() {
   selectPage();
 
@@ -42,9 +42,9 @@ function addToStorage(gem) {
 
   if (!gems.some(included)) {
     gems.push(gem);
-    console.log(`added ${gem.name} to collection`);
+    console.log("added " + gem.name + " to collection");
   } else {
-    console.log(`${gem.name} is already one of your favorites`);
+    console.log(gem.name + ' is already one of your favorites');
   }
 
   setGems(gems);
