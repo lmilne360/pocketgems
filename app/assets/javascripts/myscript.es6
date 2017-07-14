@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 $(document).on('turbolinks:load', function() {
   selectPage();
 
@@ -42,9 +42,9 @@ function addToStorage(gem) {
 
   if (!gems.some(included)) {
     gems.push(gem);
-    console.log("added " + gem.name + " to collection");
+    console.log(`added ${gem.name} to collection`);
   } else {
-    console.log(gem.name + ' is already one of your favorites');
+    console.log(`${gem.name} is already one of your favorites`);
   }
 
   setGems(gems);
@@ -77,9 +77,8 @@ function loadFavorites() {
 function checkError() {
   var error = $('.error').text();
   if (error) {
-    $('.form-control, .input-group-btn > .btn.btn-default').css({
-      "border-color": "#f55",
-      "color": "#f55"
+    $('.form-control').css({
+      "border-color": "#f55"
     });
   }
 
