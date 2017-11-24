@@ -1,15 +1,19 @@
 #wrapper #sidebar {
-	grid-area: sidebar;
+	position: fixed;
 	overflow-y: hidden;
+	width: 33%;
+	height: 100%;
 	background-image: url("map.png");
 	background-size: cover;
 }
 
 #sidebar {
-
+	top: 0;
+	left: 0;
 	display: block;
 
 	#logo {
+		position: absolute;
 		top: 3em;
 		right: 3em;
 		width: auto;
@@ -34,6 +38,7 @@
 	}
 
 	ul {
+		position: absolute;
 		top: 400px;
 		right: 0;
 
