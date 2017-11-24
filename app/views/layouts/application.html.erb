@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Pocketgems</title>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>Pocketgems</title>
+    <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body>
-  <div id="wrapper">
+  <body>
+    <div id="wrapper">
 
-    <!-- SIDEBAR -->
-    <div id="sidebar">
+      <!-- SIDEBAR -->
+
       <%= render 'partials/sidebar' %>
+
+      <!-- PAGE CONTENT -->
+      
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-
-    <!-- PAGE CONTENT -->
-
-    <div id="content">
-      <%= yield %>
-    </div>
-
-
-
-  </div>
-  <!-- wrapper -->
-</body>
-
+    <!-- wrapper -->
+  </body>
 </html>
