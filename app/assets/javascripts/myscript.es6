@@ -65,8 +65,9 @@ function getGems() {
 function loadFavorites() {
   var gems = getGems();
   gems.forEach(function(item) {
+    //class="col-md-4"
     $('.favorite-gems ul').append(
-      `<li class="col-md-4">
+      `<li>
         <span onclick='removeFave(event,"${item.name}")'>&#x2605</span>
       <a href=${item.url} target="_blank" >${item.name}</a> </li>`
     );

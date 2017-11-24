@@ -1,19 +1,19 @@
 #favorite-page {
-
   h1 {
-    position: absolute;
-    top: 7em;
-    left: 125px;
+    position: relative;
+    text-align: center;
     font-weight: bold;
   }
   .favorite-gems {
     position: relative;
-    top: 25em;
-    left: 4em;
 
     ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       padding-left: 55px;
       li {
+        width: 32%;
         display: inline-block;
 
         margin-bottom: 5px;
