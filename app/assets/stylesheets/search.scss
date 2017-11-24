@@ -1,21 +1,16 @@
-#wrapper #page-wrapper {
-  margin-left: 33%;
-}
 
 #search-page {
   h1 {
-    position: absolute;
-    top: 7em;
-    left: 125px;
+    text-align: center;
     font-weight: bold;
   }
 
   // FORM STYLES
 
   form .input-group {
-    position: absolute;
-    top: 25em;
-    left: 75px;
+    //position: absolute;
+    //top: 25em;
+    //left: 75px;
 
     .form-control {
       background: url("search.png") no-repeat 95% 50%;
@@ -44,9 +39,9 @@
 
 // SEARCH RESULTS STYLE
 .results {
-  position: absolute;
-  top: 34em;
-  left: 4em;
+  //position: absolute;
+  //top: 34em;
+  //left: 4em;
   ul {
     padding-left: 62px;
     li {

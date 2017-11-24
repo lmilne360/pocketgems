@@ -4,7 +4,7 @@
   <!-- Search Form -->
 
   <%= form_tag "/search" do %>
-  <div class="input-group col-sm-6">
+  <div class="input-group ">
     <input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term" required>
   </div>
   <% end %>
@@ -18,7 +18,7 @@
 
   <!-- Search Results -->
 
-  <div class="col-m-8 results">
+  <div class="results">
     <% if @gem %>
     <ul>
       <%= render 'partials/searchresult', g: @gem %>
